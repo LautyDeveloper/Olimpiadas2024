@@ -14,7 +14,7 @@ document.querySelectorAll(".btn-editar").forEach((editBtn) => {
     });
 
     editContent.innerHTML = ` 
-      <form action="" method="post">
+      <form action="" method="post" class="form-editar">
           <p>Editar producto</p>
           <label for="">Nombre</label>
           <input name="nombreProd" type="text" value="${editBtn.getAttribute(

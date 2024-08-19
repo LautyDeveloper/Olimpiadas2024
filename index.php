@@ -85,14 +85,6 @@
             <input type="search" name="" placeholder="Busca el producto que quieras">
         </div>
     </article>
-    <article class="categorias">
-        <h4>Categorías</h4>
-        <div class="categoria-btns">
-            <a href="#">Categoria1</a>
-            <a href="#">Categoria2</a>
-            <a href="#">Categoria3</a>
-        </div>
-    </article>
     <article class="productos">
         <h5>Productos</h5>
         <div class="lista-productos">
@@ -116,7 +108,6 @@
                     }
                 }
             ?>
-        <a id="vermasid" class="btn-cargar" name="vermas" type="submit" href="Acciones_Usuario/vermas.php?limite=<?php echo "$limite";?>">Ver Más</a>
         </div>
     </article>
 

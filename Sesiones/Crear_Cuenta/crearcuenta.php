@@ -33,7 +33,7 @@
             <input type="submit" value="CREAR CUENTA" name="CrearCuenta">
         </form>
         <?php 
-            include_once("conexion.php");
+            include_once("../../Conexion/conexion.php");
 
             if(isset($_POST['CrearCuenta'])){
                 $Nombre = $_POST['Nombre'];
@@ -46,6 +46,6 @@
             $conexion -> close();
         ?>
     </div>
-    <p>Si tienes una cuenta, puedes <a href="login.php">Iniciar Sesion</a></p>
+    <p>Si tienes una cuenta, puedes <a href="../Iniciar_Sesion/login.php">Iniciar Sesion</a></p>
 </body>
 </html>

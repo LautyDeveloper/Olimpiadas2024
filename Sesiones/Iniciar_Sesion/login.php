@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="crearcuenta.css">
+    <link rel="stylesheet" href="../Crear_Cuenta/crearcuenta.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
             <input type="submit" value="INICIAR SESION" name="IniciarSesion">
         </form>
         <?php 
-            include_once("conexion.php");
+            include_once("../../Conexion/conexion.php");
 
             if (isset($_POST['IniciarSesion'])) {
             $usuario = $_POST['NombreDeUsuario'];
@@ -36,7 +36,7 @@
     if (is_array($row)) {
         $_SESSION["id"] = $row['ID_Usuario'];
         $_SESSION["nombre"] = $row['Nombre_Usuario'];
-        header("Location:index.php");
+        header("Location:../../index.php");
         exit();
     } else {
         echo '<script type = "text/javascript">';
@@ -48,6 +48,6 @@
        ?>
 
     </div>
-    <p>Si no tienes una cuenta, puedes <a href="crearcuenta.php">Crear una Cuenta</a></p>
+    <p>Si no tienes una cuenta, puedes <a href="../Crear_Cuenta/crearcuenta.php">Crear una Cuenta</a></p>
 </body>
 </html>
