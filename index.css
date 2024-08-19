@@ -21,9 +21,22 @@ header nav {
 }
 
 header nav img {
-  border-radius: 500px;
   width: 50px;
   height: 50px;
+}
+
+header nav .logo {
+  border-radius: 50%;
+}
+
+header nav .abrir-carrito {
+  display: grid;
+  place-items: center;
+}
+
+header nav .abrir-carrito img {
+  height: 70%;
+  object-fit: contain;
 }
 
 header nav a {
@@ -265,6 +278,10 @@ header nav a {
   color: #fff;
   font-weight: bolder;
 }
+.productos .lista-productos .producto-carta p {
+  width: 60%;
+}
+
 .btns {
   display: flex;
   flex-direction: row;
@@ -570,66 +587,6 @@ footer .footer-copy {
     font-size: 25px;
   }
   header nav img {
-    border-radius: 500px;
-    width: 80px;
-    height: 80px;
-  }
-  .banner p {
-    color: #fff;
-    font-size: 40px;
-    font-weight: bolder;
-  }
-  .productos-destacados {
-    display: none;
-  }
-  footer .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 10px;
-  }
-  footer .footer-content .footer__info {
-    display: grid;
-    color: #fff;
-    gap: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  footer .footer-content .footer__info h4 {
-    font-size: 35px;
-    font-weight: bolder;
-  }
-  footer .footer-content .footer__info p {
-    font-size: 20px;
-    font-weight: bolder;
-  }
-
-  footer .footer-content .footer__info .redes {
-    display: flex;
-    gap: 10px;
-  }
-
-  footer .footer-content .footer__info .redes img {
-    width: 32px;
-    height: 32px;
-    border-radius: 0;
-  }
-}
-
-@media (min-width: 920px) {
-  .hero .hero__text h1 {
-    font-size: 80px;
-    letter-spacing: 2px;
-  }
-
-  .hero .hero__text p {
-    letter-spacing: 3px;
-    font-size: 25px;
-  }
-  header nav img {
-    border-radius: 500px;
     width: 80px;
     height: 80px;
   }

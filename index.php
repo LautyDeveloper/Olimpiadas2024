@@ -26,7 +26,7 @@
  
     <header>
         <nav>
-            <img src="./assets/media/logo.png" alt="">
+            <img src="./assets/media/logo.png" alt="" class="logo">
 
             <?php 
             include_once("Conexion/conexion.php");
@@ -105,7 +105,7 @@
                     while($row = $res -> fetch_assoc()){
                     echo'
                         <div class="producto-carta">
-                            <p>'.$row["Nombre_Producto"].' - $'.$row['Precio'].'</p>
+                            <p>'.$row["Nombre_Producto"].' - <b class="verde">$'.$row['Precio'].'</b></p>
                             <span style="display:none"=>'.$row["Descripcion"].'</span>
                             <div class="btns">
                                 <button class="btn-carrito" idProduct="'.$row["ID_Producto"].'" nombreProduct = "'.$row["Nombre_Producto"].'" precioProduct= "'.$row["Precio"].'"><img src="./assets/media/carrito-de-compras.png" alt=""></button>
