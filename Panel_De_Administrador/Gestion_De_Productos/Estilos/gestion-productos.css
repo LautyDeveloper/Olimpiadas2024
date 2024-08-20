@@ -148,12 +148,18 @@ main{
     position: fixed;
     z-index: 10;
     text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
 }
 
 .ventana-modal .ventana-modal__content{
     width: 90%;
-    height: 70%;
-    background-color: #8C5215;
+    height: 80%;
+    background-color: #2E282A;
+    box-shadow: 0px 0px 200px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .ventana-modal .ventana-modal__content .close{
@@ -162,8 +168,57 @@ main{
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+    height: 10%;
+    font-size: 3rem;
+    color: white;
 }
 
 .oculto{
     display: none;
+}
+
+.primerDiv{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.form-editar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+}
+.form-editar p{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+}
+
+.form-editar div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.4rem;
+}
+.form-editar div input{
+    background-color: #494145;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 40px;
+}
+.form-editar button{
+    background-color: #3E7140;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 40px;
+
 }

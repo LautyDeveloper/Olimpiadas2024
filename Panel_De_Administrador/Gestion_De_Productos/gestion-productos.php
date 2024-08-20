@@ -16,7 +16,7 @@
     </header>
     <div class="ventana-modal oculto">
         <div class="ventana-modal__content">
-            <div class="close">cerrar</div>
+            <div class="close">X</div>
         </div>            
     </div>
     <main>
