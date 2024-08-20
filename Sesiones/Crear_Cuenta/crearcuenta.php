@@ -40,7 +40,8 @@
                 $Apellido = $_POST['Apellido'];
                 $Usuario = $_POST['Usuario'];
                 $Contraseña = $_POST['Contraseña'];
-                $sql = "INSERT INTO usuarios (Nombre, Apellido, Nombre_Usuario, Contraseña) VALUES ('$Nombre', '$Apellido', '$Usuario', '$Contraseña')";
+                $Tipo = "Cliente";
+                $sql = "INSERT INTO usuarios (Nombre, Apellido, Nombre_Usuario, Contraseña, Tipo_Usuario) VALUES ('$Nombre', '$Apellido', '$Usuario', '$Contraseña', '$Tipo')";
                 $resultado = $conexion -> query($sql);
             }
             $conexion -> close();

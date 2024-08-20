@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>NaturalFIT JUNTANDO</title>
+    <title>NaturalFIT</title>
 </head>
 
 <body>
@@ -50,7 +50,6 @@
                       echo'</a>';                      
                     }
                 ?>
-            <a href="Panel_De_Administrador/admin-panel.html">admin-panel</a>
             <div class="abrir-carrito"><img class="" src="./assets/media/carrito-de-compras.png"></div>
 
         </nav>
@@ -82,21 +81,20 @@
             <div class="img-container">
                 <img src="./assets/media/lupa.png" alt="">
             </div>
-            <input type="search" name="" placeholder="Busca el producto que quieras">
+            <input type="search" name="" placeholder="Busca el producto que quieras" id="Buscador" class="buscarProducto">
         </div>
     </article>
     <article class="productos">
         <h5>Productos</h5>
         <div class="lista-productos">
             <?php 
-                $limite = isset($_GET['limite']) ? intval($_GET['limite']) : 4;
 
-                $sql = "SELECT * FROM productos LIMIT  $limite" ;
+                $sql = "SELECT * FROM productos";
                 $res = $conexion -> query($sql);
                 if($res -> num_rows > 0){
                     while($row = $res -> fetch_assoc()){
                     echo'
-                        <div class="producto-carta">
+                        <div class="producto-carta" data-name="'.$row["Nombre_Producto"].'">
                             <p>'.$row["Nombre_Producto"].' - <b class="verde">$'.$row['Precio'].'</b></p>
                             <span style="display:none"=>'.$row["Descripcion"].'</span>
                             <div class="btns">
@@ -132,6 +130,7 @@
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/buscador.js"></script>
 </body>
 
 </html>
